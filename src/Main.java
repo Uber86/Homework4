@@ -2,20 +2,22 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача №1
-         byte ageHuman = 19;
+         byte ageHuman = 18;
          byte legalAge = 18;
          if (ageHuman >= legalAge) {
              System.out.println("Если возраст человека равен " + ageHuman + ", то он совершеннолетний.");
-        } else {
+        }
+         if (ageHuman < legalAge) {  // Как я понял провести условия через условного оператора if
              System.out.println("Если возраст человека равен " + ageHuman + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
 
         // Задача №2
         byte airTemperature = 5;
         byte coldTemperature = 5;
-        if (airTemperature < coldTemperature) {  // условие "если меньше 5 градсов или больше" по этому не ставил <=
+        if (airTemperature < coldTemperature) {
             System.out.println("На улице " + airTemperature + " градусов, нужно надеть шапку.");
-        } else {
+        }
+        if (airTemperature >= coldTemperature) {
             System.out.println("На улице " + airTemperature + " градусов, можно идти без шапки.");
         }
 
@@ -70,28 +72,20 @@ public class Main {
         two = 2;
         int three;
         three = 3;
-        boolean oneIsMoreTwo = one > two; //Специально перевернул чтоб небыло однатипно
-        boolean threeIsMoreOne = three > one;
-        boolean threeIsMoreTwo = three > two;
-        if (oneIsMoreTwo) {
-            System.out.println(one + " больше чем " + two);
-        } else {
-            System.out.println(two + " больше чем " + one);
 
-        } if  (threeIsMoreOne) {
-            System.out.println(three + " больше чем " + one);
-        } else {
-            System.out.println(one + " больше чем " + three);
-
-        } if (threeIsMoreTwo) {
-            System.out.println(three + " больше чем " + two);
+        if (one > two && one > three) {
+            System.out.println(one + " самое большое число.");
+        }  if  (two > one && two > three) {
+            System.out.println(two + " самое большое число.");
+        //}  if (three > one && three > two) {
+            System.out.println(three + " самое большое число.");
         } else  {
-            System.out.println(two + " больше чем " + three);
+            System.out.println(three + " самое большое число.");
         }
 
 
 
-        // Если я не буду присваивать данным в задачи тип и имя переменной это будет ошибка ? Пожалуйста , ответье мне .
+        // Благодарю Вас за критику )
 
     }
 }
