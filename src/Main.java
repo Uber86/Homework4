@@ -2,20 +2,20 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача №1
-        byte ageHuman = 19;
+        byte ageHuman = 18;
         byte legalAge = 18;
         if (ageHuman >= legalAge) {
             System.out.println("Если возраст человека равен " + ageHuman + ", то он совершеннолетний.");
-        }if (ageHuman < legalAge) {  // Как я понял провести условия через условного оператора if
+        } else {
             System.out.println("Если возраст человека равен " + ageHuman + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
 
         // Задача №2
-        byte airTemperature = 5;
+        byte airTemperature = 4;
         byte coldTemperature = 5;
-        if (airTemperature < coldTemperature) {
+        if (coldTemperature > airTemperature) {
             System.out.println("На улице " + airTemperature + " градусов, нужно надеть шапку.");
-        }if (airTemperature >= coldTemperature) {
+        } else {
             System.out.println("На улице " + airTemperature + " градусов, можно идти без шапки.");
         }
 
@@ -79,9 +79,5 @@ public class Main {
         } else {
             System.out.println(three + " самое большое число.");
         }
-
-
-        // Надеюсь что я правельно понял
-
     }
 }
